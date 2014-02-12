@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'django-flash',
-    version = '1.8',
+    version = '1.9',
     author = 'Daniel Fernandes Martins',
     author_email = 'daniel@destaquenet.com',
     description = 'Django-flash is a simple Django extension which provides support for Rails-like flash messages.',
@@ -26,7 +26,9 @@ setup(
         'Framework :: Django',
         'Topic :: Internet :: WWW/HTTP'
     ],
-    install_requires = ['Django>=1.0_final'],
+    install_requires = [
+        "Django>=1.0,<=1.5", # Django v1.0.x - v1.5.x
+    ],
     packages = find_packages('src'),
     package_dir = {'':'src'},
     include_package_data = True,
