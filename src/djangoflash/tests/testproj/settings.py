@@ -24,7 +24,7 @@ ADMIN_MEDIA_PREFIX = '/admin/'
 MEDIA_ROOT = os.path.normpath(os.path.dirname(__file__) + '/media/')
 
 TEMPLATE_LOADERS = (
-    'django.template.loaders.filesystem.load_template_source',
+    'django.template.loaders.filesystem.Loader',
 )
 
 MIDDLEWARE_CLASSES = (
