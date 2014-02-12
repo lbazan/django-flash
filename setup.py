@@ -26,9 +26,7 @@ setup(
         'Framework :: Django',
         'Topic :: Internet :: WWW/HTTP'
     ],
-    install_requires = [
-        "Django>=1.0,<=1.5", # Django v1.0.x - v1.5.x
-    ],
+    install_requires = ['Django>=1.5'],
     packages = find_packages('src'),
     package_dir = {'':'src'},
     include_package_data = True,
